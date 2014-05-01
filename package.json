@@ -1,0 +1,26 @@
+{
+  "name": "copy-gmail-email-to-clipboard",
+  "private": true,
+  "version": "0.0.3",
+  "description": "Simply double-click on an email address anywhere in Gmail to automaticaly copy it to your clipboard",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/niftylettuce/copy-gmail-email-to-clipboard.git"
+  },
+  "author": "Nick Baugh <niftylettuce@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niftylettuce/copy-gmail-email-to-clipboard/issues"
+  },
+  "homepage": "https://github.com/niftylettuce/copy-gmail-email-to-clipboard",
+  "dependencies": {
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt": "^0.4.4",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-bower-task": "^0.3.4",
+    "bower": "^1.3.3",
+    "grunt-contrib-compress": "^0.8.0"
+  }
+}

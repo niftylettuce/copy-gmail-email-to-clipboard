@@ -31,8 +31,8 @@
       clipboard: email,
       image: icons48,
       title: 'Copied email address to clipboard!',
-      description: 'CMD+V/CTRL+V to paste, this disappears in 3 secondss.',
-      timeout: 3000
+      description: '"' + email.replace('&lt;', '<').replace('&gt;', '>') + '" has been copied to your clipboard; CMD+V/CTRL+V to paste.  This message will auto-hide in 5 seconds.',
+      timeout: 5000
     })
   }
 
