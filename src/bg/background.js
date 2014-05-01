@@ -1,6 +1,25 @@
 
 // # Copy Gmail Email to Clipboard
 
+var icons48 = chrome.extension.getURL('icons/icon48.png')
+
+chrome.runtime.onInstalled.addListener(function(details) {
+  if (details.reason === 'install' || details.reason === 'update') {
+    var msg = webkitNotifications.createNotification(
+      icons48,
+      'Please reload Gmail to activate',
+      'You must restart Chrome or reload Gmail tabs to use this extension.  Click here to open a new tab in Gmail.'
+    )
+    msg.show()
+    msg.addEventListener('click', function() {
+      msg.cancel()
+      chrome.tabs.create({
+        url: 'https://mail.google.com'
+      })
+    })
+  }
+})
+
 chrome.runtime.onConnect.addListener(function(port) {
 
   port.onMessage.addListener(function(message) {

@@ -1,6 +1,6 @@
 {
   "name": "Copy Gmail Email to Clipboard",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "Simply double-click on an email address anywhere in Gmail to automaticaly copy it to your clipboard",
   "homepage_url": "https://github.com/niftylettuce/copy-gmail-email-to-clipboard",

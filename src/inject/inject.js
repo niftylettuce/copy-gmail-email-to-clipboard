@@ -3,7 +3,7 @@
 
 (function(window, $) {
 
-  var icons48 = chrome.extension.getURL("icons/icon48.png")
+  var icons48 = chrome.extension.getURL('icons/icon48.png')
 
   var port = chrome.runtime.connect()
 
